@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "./style.css"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import Navebar from "./components/Navebar";
+import Searchbar from './components/Searchbar';
+import Products from './components/Products';
+import Aboutus from './components/Aboutus';
+import Contactus from './components/Contactus';
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(<div>
+  <Navebar></Navebar><Searchbar></Searchbar><Products></Products><Aboutus></Aboutus><Contactus></Contactus>
+</div>)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
